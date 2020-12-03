@@ -1,3 +1,5 @@
+import { Category } from 'src/app/models/category';
+
 export class Product {
     constructor(
         public id: number,
@@ -7,7 +9,7 @@ export class Product {
         public weight: number,
         public price: number,
         public isEnabled: boolean,
-        public category: {},
+        public category: Category,
         public ingredients: any[]
     ) { }
 }

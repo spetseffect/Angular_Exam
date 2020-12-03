@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { IngredComponent } from './components/ingred/ingred.component';
+import { IngredsComponent } from './components/ingreds/ingreds.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ProductDetailComponent,
     NotFoundComponent,
-    IngredComponent
+    IngredComponent,
+    IngredsComponent
   ],
   imports: [
     BrowserModule,
