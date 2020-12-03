@@ -1,0 +1,26 @@
+<div *ngIf="product; else notfound;">
+
+    <h2>{{product.name}}</h2>
+    <div class="row">
+        <div class="col-2">
+            <b>{{product.name}}</b>
+        </div>
+        <div class="col-2">
+            <b>{{product.category}}</b>
+        </div>
+        <div class="col-2">
+            <b>{{product.price}}</b>
+        </div>
+
+        <div class="col-2">
+            <b>{{product.date | date }}</b>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="goToProducts()">
+        Go to Products
+    </button>
+</div>
+<ng-template #notfound>
+    <h1 class="alert-danger"> Product not Found </h1>
+</ng-template>
