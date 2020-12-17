@@ -9,6 +9,6 @@
 			<input type="checkbox" class="custom-control-input" [id]="'switch'+ingred.id" [checked]="ingred.isEnabled">
 			<label class="custom-control-label" [for]="'switch'+ingred.id"></label>
 		</div>
-		<a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+		<a [routerLink]="'/ingred/'+ingred.id" class="btn btn-primary">Редактировать</a>
 	</div>
 </div>

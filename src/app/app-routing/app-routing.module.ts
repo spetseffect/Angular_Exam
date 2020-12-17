@@ -8,13 +8,14 @@ import { ProductDetailComponent } from '../components/product-detail/product-det
 import { NotFoundComponent } from '../components/not-found/not-found.component';
 import { IngredComponent } from '../components/ingred/ingred.component';
 import { IngredsComponent } from '../components/ingreds/ingreds.component';
+import { IngredEditComponent } from '../components/ingred-edit/ingred-edit.component';
 
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'products', component: ProductsComponent },
 	{ path: 'product/:id', component: ProductDetailComponent },
 	{ path: 'ingreds', component: IngredsComponent },
-	{ path: 'ingred/:id', component: IngredComponent },
+	{ path: 'ingred/:id', component: IngredEditComponent },
 	{ path: '**', component: NotFoundComponent }
 ]
 

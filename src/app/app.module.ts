@@ -13,26 +13,28 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { IngredComponent } from './components/ingred/ingred.component';
 import { IngredsComponent } from './components/ingreds/ingreds.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { IngredEditComponent } from './components/ingred-edit/ingred-edit.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ProductComponent,
-    ProductsComponent,
-    AboutComponent,
-    ProductDetailComponent,
-    NotFoundComponent,
-    IngredComponent,
-    IngredsComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    HttpClientModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		ProductComponent,
+		ProductsComponent,
+		AboutComponent,
+		ProductDetailComponent,
+		NotFoundComponent,
+		IngredComponent,
+		IngredsComponent,
+		IngredEditComponent
+	],
+	imports: [
+		BrowserModule,
+		NgbModule,
+		HttpClientModule,
+		AppRoutingModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
