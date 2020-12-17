@@ -7,18 +7,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductDetailComponent } from '../components/product-detail/product-detail.component';
 import { NotFoundComponent } from '../components/not-found/not-found.component';
 import { IngredComponent } from '../components/ingred/ingred.component';
+import { IngredsComponent } from '../components/ingreds/ingreds.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'ingred', component: IngredComponent },
-  { path: 'products', component: ProductsComponent },
-  { path: 'product/:id', component: ProductDetailComponent },
-  { path: '**', component: NotFoundComponent }
+	{ path: '', component: HomeComponent },
+	{ path: 'products', component: ProductsComponent },
+	{ path: 'product/:id', component: ProductDetailComponent },
+	{ path: 'ingreds', component: IngredsComponent },
+	{ path: 'ingred/:id', component: IngredComponent },
+	{ path: '**', component: NotFoundComponent }
 ]
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes)],
+	exports: [RouterModule]
 })
 export class AppRoutingModule { }

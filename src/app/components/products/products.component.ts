@@ -3,18 +3,18 @@ import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+	selector: 'app-products',
+	templateUrl: './products.component.html',
+	styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  products: Product[];
-  constructor(private productService: ProductService) { }
+	products: Product[];
+	constructor(private productService: ProductService) { }
 
-  ngOnInit(): void {
-    this.productService.getData().subscribe(response => {
-      console.log('response', response);
-      this.products = response;
-    });
-  }
+	ngOnInit(): void {
+		this.productService.getData().subscribe(response => {
+			console.log('response', response);
+			this.products = response;
+		});
+	}
 }

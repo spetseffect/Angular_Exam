@@ -1,13 +1,14 @@
 <div class="card">
-	<img src="..." class="card-img-top" alt="...">
+	<p>
+		<img src="./assets/ingredient/{{ingred.photo}}" class="card-img-top" alt="...">
+	</p>
 	<div class="card-body">
 		<h5 class="card-title">{{ingred.title}}</h5>
-		<!-- <h6 class="card-title">{{ingred.price}}</h6>
-        <p class="card-text">{{}}</p>
-        <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" [id]="'switch'+ingred.id" [checked]="ingred.isEnabled">
-            <label class="custom-control-label" [for]="'switch'+ingred.id"></label>
-          </div> -->
+		<h6 class="card-title">{{ingred.price}}</h6>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" [id]="'switch'+ingred.id" [checked]="ingred.isEnabled">
+			<label class="custom-control-label" [for]="'switch'+ingred.id"></label>
+		</div>
 		<a href="#" class="btn btn-primary">Переход куда-нибудь</a>
 	</div>
 </div>
