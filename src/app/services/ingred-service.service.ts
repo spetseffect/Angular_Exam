@@ -11,8 +11,8 @@ export class IngredServiceService {
 	getData() {
 		return this.http.get<Ingred[]>("https://pizzastep.pp.ua:44306/api/ingredient");
 	}
-	getById(id: number): Ingred {
-		return this.data.find(i => i.id == id);
+	getById(id: number) {
+		return this.http.get<Ingred>("https://pizzastep.pp.ua:44306/api/ingredient/" + id);
 	}
 	addData(ingred: Ingred) {
 		this.data.push(ingred);

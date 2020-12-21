@@ -13,7 +13,7 @@ export class IngredsComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.ingredService.getData().subscribe(response => {
-			//console.log('response', response);
+			// console.log('response', response);
 			this.ingreds = response;
 		});
 	}
