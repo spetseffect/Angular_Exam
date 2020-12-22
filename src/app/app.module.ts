@@ -14,6 +14,7 @@ import { IngredComponent } from './components/ingred/ingred.component';
 import { IngredsComponent } from './components/ingreds/ingreds.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { IngredEditComponent } from './components/ingred-edit/ingred-edit.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -31,6 +32,8 @@ import { IngredEditComponent } from './components/ingred-edit/ingred-edit.compon
 	imports: [
 		BrowserModule,
 		NgbModule,
+		FormsModule,
+		ReactiveFormsModule,
 		HttpClientModule,
 		AppRoutingModule
 	],

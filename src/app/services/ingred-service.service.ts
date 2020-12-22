@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 	providedIn: 'root'
 })
 export class IngredServiceService {
-	private data: Ingred[];
+	data: Ingred[];
 	constructor(private http: HttpClient) { }
 	getData() {
 		return this.http.get<Ingred[]>("https://pizzastep.pp.ua:44306/api/ingredient");
